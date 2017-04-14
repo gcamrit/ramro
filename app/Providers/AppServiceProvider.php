@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Middleware\SampleMiddleware;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 
@@ -20,12 +19,11 @@ class AppServiceProvider extends AbstractServiceProvider implements BootableServ
         /** @var \League\Route\RouteCollection $route */
         $route = $this->container->get('route');
 
-        $route->get('/', new \App\Actions\HomePageAction)->middleware(new SampleMiddleware);
-
+        $route->get('/', '\App\Controllers\WelcomeController::index');
     }
 
     public function register()
     {
-        
+
     }
 }

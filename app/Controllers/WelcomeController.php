@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Actions;
+namespace App\Controllers;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class HomePageAction {
-
-    function __invoke(ServerRequestInterface $request, ResponseInterface $response)
+class WelcomeController
+{
+    public function index(ServerRequestInterface $request, ResponseInterface $response)
     {
         $response->getBody()->write('<h1>Hello, World!</h1>');
 

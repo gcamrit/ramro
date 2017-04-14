@@ -4,9 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "31880147cab901b13b369f4eaa7032a6",
-    "content-hash": "64a635e239019779f3d6ee1f56fe496e",
+    "hash": "d658699d521c70817c0ef6a90b268a4d",
+    "content-hash": "380d110fb2203efa33e5350bdc7a43ef",
     "packages": [
+        {
+            "name": "amritgc/ramro-framework",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gcamrit/ramro-framework.git",
+                "reference": "dc9fa5c08f3e77a47ce0fa48112dc21c2b4aab0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gcamrit/ramro-framework/zipball/dc9fa5c08f3e77a47ce0fa48112dc21c2b4aab0c",
+                "reference": "dc9fa5c08f3e77a47ce0fa48112dc21c2b4aab0c",
+                "shasum": ""
+            },
+            "require": {
+                "league/container": "^2.4",
+                "league/route": "^3.0",
+                "zendframework/zend-diactoros": "^1.4"
+            },
+            "provide": {
+                "psr/container-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ramro\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amrit G.C",
+                    "email": "music.demand01@gmail.com"
+                }
+            ],
+            "description": "Ramro is a progressive php framework.",
+            "keywords": [
+                "framework",
+                "micro-framework",
+                "progressive-framework"
+            ],
+            "time": "2017-04-14 08:25:30"
+        },
         {
             "name": "container-interop/container-interop",
             "version": "1.2.0",

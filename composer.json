@@ -1,6 +1,7 @@
 {
     "name": "amritgc/ramro",
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Amrit G.C",
@@ -8,13 +9,11 @@
         }
     ],
     "require": {
-        "league/container": "^2.4",
-        "league/route": "^3.0",
-        "zendframework/zend-diactoros": "^1.4"
+        "amritgc/ramro-framework": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Ramro\\": "app"
+            "App\\": "app"
         }
     }
 }
